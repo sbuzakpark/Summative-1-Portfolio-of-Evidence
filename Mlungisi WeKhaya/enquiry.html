@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Enquiry - Mlungisi WeKhaya</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Site navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="about.html">About</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Main page heading -->
+    <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Enquiry Form</h1>
+    
+    <!-- Introductory text -->
+    <p style="font-family: italic;">Tell us how you'd like to get involved with Mlungisi WeKhaya</p>
+
+    <br>
+
+    <!-- Enquiry form starts here -->
+    <form method="POST" action="#" data-form="enquiry">
+        
+        <!-- Contact information section -->
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <div>
+                <label for="fullName">Full Name <span>*</span></label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+
+            <div>
+                <label for="email">Email Address <span>*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="phone">Phone Number <span>*</span></label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+        </fieldset>
+
+        <!-- Interest selection section -->
+        <fieldset>
+            <legend>I am interested in:</legend>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="enquiryType" value="volunteer">
+                    Volunteering with us
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="enquiryType" value="sponsor">
+                    Becoming a Sponsor
+                </label>
+            </div>
+        </fieldset>
+
+        <!-- Volunteer details section -->
+        <fieldset>
+            <legend>Volunteer Information</legend>
+
+            <div>
+                <label for="experience">Do you have any relevant experience? <span>*</span></label>
+                <textarea id="experience" name="experience" placeholder="Tell us about your background and skills..."></textarea>
+            </div>
+
+            <div>
+                <label>Preferred areas to volunteer:</label>
+                <div>
+                    <label>
+                        <input type="checkbox" name="volunteerArea" value="teaching">
+                        Teaching/Tutoring
+                    </label>
+                    <label>
+                        <input type="checkbox" name="volunteerArea" value="mentoring">
+                        Mentoring
+                    </label>
+                    <label>
+                        <input type="checkbox" name="volunteerArea" value="community">
+                        Community Programs
+                    </label>
+                    <label>
+                        <input type="checkbox" name="volunteerArea" value="admin">
+                        Administrative Support
+                    </label>
+                    <label>
+                        <input type="checkbox" name="volunteerArea" value="other">
+                        Other
+                    </label>
+                </div>
+            </div>
+
+            <div>
+                <label>Availability:</label>
+                <div>
+                    <label>
+                        <input type="radio" name="availability" value="weekdays">
+                        Weekdays
+                    </label>
+                    <label>
+                        <input type="radio" name="availability" value="weekends">
+                        Weekends
+                    </label>
+                    <label>
+                        <input type="radio" name="availability" value="flexible">
+                        Flexible
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Sponsorship details section -->
+        <fieldset>
+            <legend>Sponsorship Information</legend>
+
+            <div>
+                <label for="organization">Organization/Company Name</label>
+                <input type="text" id="organization" name="organization">
+            </div>
+
+            <div>
+                <label for="sponsorshipType">Type of Sponsorship Interested In:</label>
+                <select id="sponsorshipType" name="sponsorshipType">
+                    <option value="">-- Select an option --</option>
+                    <option value="financial">Financial Sponsorship</option>
+                    <option value="product">Product/Service Donation</option>
+                    <option value="event">Event Sponsorship</option>
+                    <option value="project">Project Sponsorship</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="sponsorMessage">Tell us more about your sponsorship proposal <span>*</span></label>
+                <textarea id="sponsorMessage" name="sponsorMessage" placeholder="Describe how you'd like to support us..."></textarea>
+            </div>
+        </fieldset>
+
+        <!-- Additional information section -->
+        <fieldset>
+            <legend>Additional Information</legend>
+
+            <div>
+                <label for="message">Additional Message or Questions:</label>
+                <textarea id="message" name="message" placeholder="Any other information you'd like to share..."></textarea>
+            </div>
+        </fieldset>
+
+        <!-- Submit enquiry button -->
+        <button type="submit">Send Enquiry</button>
+    </form>
+
+    <!-- Footer with copyright information -->
+    <footer>
+        <p>&copy; 2026 Mlungisi WeKhaya. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,497 @@
+/*---------------------------------------------------------------
+GENERAL PAGE STYLING
+---------------------------------------------------------------*/
+
+/* Remove default spacing and use a readable font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the entire webpage */
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+background-color:wheat;
+color: black;
+
+}
+main {
+    text-align: center;
+}
+/*---------------------------------------------------------------   
+HEADER
+---------------------------------------------------------------*/
+
+header {
+background-color:black;
+color: white;
+padding: 20px;
+text-align: center}
+
+/* website title */
+header h1 {
+    margin-bottom: 100px;
+    text-align: center;
+}
+/*---------------------------------------------------------------
+NAVIGATION
+---------------------------------------------------------------*/
+.navbar-links {
+    align-items: left;
+}
+nav a {
+
+color: black;
+text-decoration: none;
+margin: 0 15px;
+font-weight: bold;
+font-style: arial;
+}
+
+nav {
+  background-color: rgb(208, 170, 99);
+  font-size: 20px;
+}
+
+
+/* Change link appearance when mouse is over it */
+nav a:hover {
+color: #ffd166;
+}
+
+nav a[aria-current="page"] {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+nav a:focus-visible,
+button:focus-visible,
+a:focus-visible,
+main article img[role="button"]:focus-visible {
+    outline: 3px solid #123556;
+    outline-offset: 3px;
+}
+
+/*---------------------------------------------------------------
+MAIN CONTENT
+----------------------------------------------------------------*/
+
+main {
+min-height: 70vh;}
+
+/*---------------------------------------------------------------
+HERO SECTION
+---------------------------------------------------------------*/
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #dff3ff;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+
+/* Button used on the home page */
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    color: white;
+    background-color: #123556;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.welcome-button {
+    margin: 12px;
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(208, 170, 99);
+    color: black;
+    font: inherit;
+    cursor: pointer;
+}
+
+.welcome-button:hover {
+    background-color: #b98f48;
+}
+
+.welcome-message {
+    margin: 8px auto;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------
+SERVICES
+---------------------------------------------------------------*/
+
+.services {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 25px;
+}
+
+/* Positioning the images */
+.faucetimage {
+    margin-left:150px;
+}
+
+.blockedtoilet {
+    margin-left:220px;
+}
+
+.plumbingleak {
+    margin-left:30px;
+}
+
+.cloggeddrain {
+    margin-left:150px;
+}
+
+.ceilingleakage {
+    margin-left:220px;
+}
+/* Put services cards next to each other */
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+/* Individual service card */
+.service-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 280px;
+
+
+/* Creates a subtle shadow */
+box-shadow: 0 2px 5px rgba(235, 217, 217, 0.15);
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+
+/*---------------------------------------------------------------
+ABOUT / CONTENT PAGE
+---------------------------------------------------------------*/
+
+.content {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.content h2 {
+    margin-bottom: 15px;
+}
+
+.content p {
+    margin-bottom: 20px;
+}
+
+/* Style the unordered list */
+.content ul {
+    margin-left: 25px;
+
+}
+
+/* Style the stars in reviews */
+.highlight-text {
+    color: #ffd700; /* Gold color for stars */
+    font-size: 20px;
+}
+
+.highlight-topics {
+    color: white; /* Dark blue color for topics */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*---------------------------------------------------------------
+CONTACT FORM
+---------------------------------------------------------------*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: min(90%, 700px);
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input[type="checkbox"],
+form input[type="radio"] {
+    width: auto;
+    margin-right: 6px;
+}
+
+form fieldset {
+    width: 100%;
+    margin: 12px 0;
+    padding: 16px;
+    border: 1px solid #9a7a43;
+    border-radius: 5px;
+}
+
+form fieldset label {
+    display: inline-block;
+    margin: 6px 12px 6px 0;
+}
+
+form fieldset input,
+form fieldset select,
+form fieldset textarea {
+    display: block;
+    width: 100%;
+}
+
+form fieldset input[type="checkbox"],
+form fieldset input[type="radio"] {
+    display: inline-block;
+    width: auto;
+}
+
+/* Set a reasonable height for the message box */
+form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Submit button */
+form button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: rgb(208, 170, 99);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Submit button hover effect */
+form button:hover {
+    background-color: rgb(208, 170, 99);
+}
+
+.service-selected {
+    background-color: rgb(208, 170, 99);
+    color: white;
+}
+
+main > button {
+    margin: 5px;
+    padding: 10px 14px;
+    border: 0;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+main > button:hover {
+    background-color: #f0dfc2;
+}
+
+.quote-link {
+    display: inline-block;
+    margin: 12px;
+    padding: 10px 16px;
+    border-radius: 5px;
+    background-color: rgb(208, 170, 99);
+    color: white;
+    text-decoration: none;
+}
+
+.quote-link:hover {
+    background-color: rgb(208, 170, 99);
+}
+
+.selected-service-summary,
+.form-feedback {
+    margin: 16px auto;
+    max-width: 700px;
+    padding: 12px;
+}
+
+.form-feedback:not(:empty) {
+    border-left: 4px solid rgb(208, 170, 99);
+    background-color: #fffaf0;
+}
+
+.selected-service-summary {
+    border: 1px solid rgb(208, 170, 99);
+    border-radius: 5px;
+}
+
+.faq-toggle {
+    padding: 4px 8px;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+}
+
+.faq-toggle::after {
+    content: " +";
+}
+
+.faq-toggle[aria-expanded="true"]::after {
+    content: " −";
+}
+
+.gallery-dialog {
+    width: min(90vw, 900px);
+    max-height: 90vh;
+    margin: auto;
+    padding: 20px;
+    border: 0;
+    border-radius: 8px;
+    background: white;
+}
+
+.gallery-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.gallery-dialog img {
+    display: block;
+    max-width: 100%;
+    max-height: 75vh;
+    margin: 0 auto;
+}
+
+.gallery-dialog p {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.gallery-dialog-close {
+    display: block;
+    margin: 0 0 12px auto;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+main article img[role="button"] {
+    cursor: zoom-in;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+/*---------------------------------------------------------------
+FOOTER
+---------------------------------------------------------------*/
+footer {
+    background-color: rgb(208, 170, 99);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/*---------------------------------------------------------------
+RESPONSIVE DESIGN
+---------------------------------------------------------------*/
+
+/* These styles apply to smaller screens */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    form {
+        width: 92%;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .content {
+        margin: 20px;
+        padding: 25px;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+
+    main article img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    table {
+        display: block;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+}
